@@ -1,19 +1,20 @@
 body {
-    background: #6cb200;            /* COLORE SFONDO E STILE BODY */
+    background: linear-gradient(90deg, #6CB200, #85C228 100%);     /* COLORE SFONDO E STILE BODY */
     font-family: Arial, Helvetica, sans-serif;
     }
     
     fieldset {
       background: #034F84; /* STILE MODULO */
       color: #fff;
-    }
+      border: 3px solid grey;
+     }
     
     input {    /* STILE CASELLA DI TESTO */
       font-size: 120%;
-        color: #000; 
+      color: #000; 
       background-color: #FFF;
-        border: 1px solid #000;
-      border-radius: 5px;
+      border: 3px solid grey; /* COLORE BORDI INPUT */
+      border-radius: 8px;
       padding: 5px 5px 5px 30px;
       background-repeat: no-repeat;
       background-position: 8px 9px;
@@ -21,7 +22,7 @@ body {
       margin-bottom: 10px;
       }
 
-    .button {
+    .button {              /* STILE PULSANTE */
         cursor: pointer;
         margin: 0 0.5rem;
         font-weight: bold;
@@ -32,10 +33,10 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         border: 3px solid grey;
         color: #FFF;
-        background:#6CB200
+        background: linear-gradient(90deg, #6CB200, #85C228 100%);
       }
     
-    .button:hover {
+    .button:hover {              /* STILE PULSANTE PASSAGGIO MOUSE */
       border-color: #00CCFF;
     }
       
