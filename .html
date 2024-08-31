@@ -5,31 +5,36 @@
         <meta name="vievport" content="width-device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="form.css"> <!--PERCORSO CSS-->
         <title>Cerchiamo personale brillante da inserire nel nostro staff</title>
-        
+    </head>
+       
+    
      <body>
             <fieldset>            <!--CONTENUTO-->
                 <legend>Lavora con noi</legend>
+                <form id="jobForm" onsubmit="return sanitizeForm()"></form>
                  <label>Nome*<br />              <!--CASELLE INPUT TESTO-->
-                    <input type="text" name="nome" /></label><br /> 
+                    <input type="text" name="nome" id="nome" /></label><br /> 
                     <label>Cognome*<br />
-                        <input type="text" name="cognome" /></label><br />
+                        <input type="text" name="cognome" id="cognome" /></label><br />
                   <label>Email*<br />
-                    <input type="text" name="email" /></label><br />
+                    <input type="text" name="email" id="email" /></label><br />
                   <label>Telefono*<br />
-                    <input type="text" name= "number" name="telefono" /></label><br />
+                    <input type="text" name= "number" name="telefono" id="telefono" /></label><br />
                     <label>Ruolo desiderato*<br />
-                        <input type="text" name="ruolo desiderato" /></label><br />
+                        <input type="text" name="ruolo" id="ruolo" /></label><br />
                         <p>Sede di interesse:</p>              
                 <select name="sede" id="sede">  <!--ELENCO A DISCESA-->
-              <option value="roma">Sede di Roma</option>
-            <option value="nepi">Sede di Nepi</option>
+              <option value="salario">Roma Salario</option>
+            <option value="trastevere">Roma Trastevere</option>
             </select><br />
                     <p>Carica curriculum</p>
-                    <input type="file"></label>  <!--CARICA FILE-->
+                    <input type="file" id="curriculum"><br />  <!--CARICA FILE-->
                     <p>Autorizzo al trattamento dati Legge 196/2003*</p>
-                    <input type="checkbox"></label>
-                  <button class="button">Invia</button>  <!--PULSANTE-->
+                    <input type="checkbox" id="autorizzo"><br />
+                  <button class="button" type="submit">Invia</button>  <!--PULSANTE-->
+                  </form>
                   <img src="images/job.png" alt="colloquio lavoro"/> <!--IMMAGINE-->
                   </fildset>
+                  <script src="sicurezza.js"></script>
                 </body>
             </html>
